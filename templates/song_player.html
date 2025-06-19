@@ -1,0 +1,28 @@
+<div class="song-player">
+    <img src="{cover_path}" alt="cover" class="cover">
+    <h2>{title} - {artist}</h2>
+    <audio id="audio" controls src="{file_path}"></audio>
+    <button onclick="addToFavorite({song_id})">Yêu thích</button>
+    <button onclick="addToPlaylist({song_id})">Thêm vào playlist</button>
+    <div id="comments">
+      <!-- Danh sách bình luận -->
+    </div>
+    <form id="comment-form">
+      <textarea name="content" placeholder="Bình luận..."></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+    <div class="rating">
+      <span>Đánh giá:</span>
+      <select id="rating" onchange="rateSong({song_id})">
+        <option value="">--</option>
+        <option value="1">1 sao</option>
+        <option value="2">2 sao</option>
+        <option value="3">3 sao</option>
+        <option value="4">4 sao</option>
+        <option value="5">5 sao</option>
+      </select>
+    </div>
+</div>
+<script>
+// JS thêm vào/hiện bình luận, yêu thích, xếp hạng...
+</script>
